@@ -183,7 +183,18 @@ export default function App() {
           <div className="logo-icon">🗜️</div>
           <span className="logo-text">ImagePress</span>
         </div>
-        <span className="header-badge">100% Browser-based</span>
+        <div className="header-right">
+          <a
+            id="digital-heroes-btn"
+            href="https://digitalheroesco.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-digital-heroes"
+          >
+            Built for Digital Heroes
+          </a>
+          <span className="header-badge">100% Browser-based</span>
+        </div>
       </header>
 
       {/* Hero */}
@@ -321,6 +332,24 @@ export default function App() {
       {compareId && compareItem && (
         <CompareModal item={compareItem} onClose={() => setCompareId(null)} />
       )}
+
+      {/* Footer */}
+      <footer className="site-footer">
+        <div className="footer-inner">
+          <span className="footer-built">
+            Built by
+            <span className="footer-name"> Arun Rangad</span>
+          </span>
+          <span className="footer-divider">·</span>
+          <a
+            href="mailto:arunrangad83@gmail.com"
+            className="footer-email"
+            id="footer-email-link"
+          >
+            arunrangad83@gmail.com
+          </a>
+        </div>
+      </footer>
 
       {/* Toasts */}
       <ToastContainer />
